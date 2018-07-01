@@ -1,0 +1,53 @@
+<html>
+    <head>
+      <script src="http://www.youhutong.com/static/js/jquery.js"></script>
+<script src="./uploadPreview.js" type="text/javascript"></script>
+        <script src="jquery.min.js"></script>
+        <style>
+    .pic{
+      position:absolute;
+      top:50%;left:50%;
+        transform:translate(-50%,-50%);
+        width:400px;
+        height:250px;
+        cursor:pointer;
+    }
+    #pic2{
+      display: none;
+      cursor:pointer;
+    }
+    #pic3{
+      display: none;
+    }
+
+     .pic1go{
+       top:15%;
+     }
+     .pic2go{
+       top:85%;
+     }
+        </style>
+      </head>
+    <body>
+
+  <img src="/Users/user/Desktop/web/img/hobby/calligraphy/IMG_8975.jpg" class="pic" id="pic1">
+  <img src="/Users/user/Desktop/web/img/hobby/calligraphy/IMG_2249.jpg" class="pic" id="pic2">
+  <img src="/Users/user/Desktop/web/img/hobby/calligraphy/IMG_3997.jpg" class="pic" id="pic3">
+
+
+
+<script>
+function play1(){
+  $("#pic1").addClass("pic1go");
+  $("#pic2").fadeIn();
+}
+function play2(){
+  $("#pic2").addClass("pic2go");
+  $("#pic3").fadeIn();
+}
+$("#pic1").click(play1);
+$("#pic2").click(play2);
+
+</script>
+    </body>
+</html>

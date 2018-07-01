@@ -1,0 +1,47 @@
+<html>
+    <head>
+
+        <script src="jquery.min.js"></script>
+        <style>
+        #frame {
+    			position: absolute;
+          top:50%;left:50%;
+          transform:translate(-50%,-50%);
+    			width: 600px;
+    			height: 400px;
+    			overflow: hidden;
+    			border-radius:10px;
+    		}
+
+    		#photos img {
+    			float: left;
+    			width:600px;
+    			height:400px;
+    		}
+    		#photos {
+    			position: absolute;
+    			width: 3000px;
+    		}
+    		.play{
+    			animation: playing 5s ease-out infinite alternate;
+    		}
+    		@keyframes playing {
+    			0%,20% {		margin-left: 0px;		}
+    			25%,40% {		margin-left: -600px;	}
+    			45%,60% {		margin-left: -1200px;	}
+    			65%,80% {		margin-left: -1800px;	}
+    			85%,100% {		margin-left: -2400px;	}
+    		}
+        </style>
+    <head>
+<body>
+  <div id="frame" >
+     <div id="photos" class="play">
+         <img src="/Users/user/Desktop/web/img/schoolwork/com-gra/camera002.jpg" >
+         <img src="/Users/user/Desktop/web/img/schoolwork/com-gra/autori-crediti.jpg" >
+         <img src="/Users/user/Desktop/web/img/schoolwork/com-gra/modulo 15d.jpg" >
+         <img src="/Users/user/Desktop/web/img/schoolwork/com-gra/modulo17b.jpg" >
+         <img src="/Users/user/Desktop/web/img/schoolwork/com-gra/tamburinotarget.jpg" >
+
+</body>
+</html>
